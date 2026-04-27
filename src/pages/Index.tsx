@@ -341,7 +341,7 @@ export default function Index() {
           <h4>Контакты</h4>
           <ul>
             <li>г. Суворов</li>
-            <li>Гимназия</li>
+            <li>ул. Суворова, д. 7</li>
             <li>Столовая, 1 этаж</li>
           </ul>
         </div>
