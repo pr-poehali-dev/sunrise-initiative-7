@@ -139,7 +139,7 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Хит</span>
               <img
-                src="https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/1c4916df-eb65-4e7d-adc9-b773ab4dcc98.jpg"
                 alt="Борщ"
               />
               <div className="menu-card-body">
@@ -166,7 +166,7 @@ export default function Index() {
                 Любимое
               </span>
               <img
-                src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/e965d574-aa7a-40f9-9cd3-821afacaa37b.jpg"
                 alt="Котлета с пюре"
               />
               <div className="menu-card-body">
@@ -191,7 +191,7 @@ export default function Index() {
                 Свежее
               </span>
               <img
-                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/c5951ee0-830b-454b-9fd0-637921f454aa.jpg"
                 alt="Выпечка"
               />
               <div className="menu-card-body">
@@ -275,26 +275,26 @@ export default function Index() {
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Блюдо 1"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/1c4916df-eb65-4e7d-adc9-b773ab4dcc98.jpg"
+                alt="Борщ"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Блюдо 2"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/acc9bd78-50fd-46ee-9414-8b730b1e0c94.jpg"
+                alt="Столовая"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Блюдо 3"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/72b89a32-2162-49d1-bc94-6daa78ec930d.jpg"
+                alt="Завтрак"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Блюдо 4"
+                src="https://cdn.poehali.dev/projects/14af8f94-9278-404c-9a86-1b5240bcf405/files/c5951ee0-830b-454b-9fd0-637921f454aa.jpg"
+                alt="Выпечка"
               />
             </div>
           </div>
