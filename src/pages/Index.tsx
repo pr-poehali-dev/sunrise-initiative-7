@@ -84,12 +84,12 @@ export default function Index() {
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              ЕДА КАК
+              СЫТНЫЙ
               <br />
-              ДОМА, <span>только вкуснее</span>
+              УЧЕБНЫЙ <span>день</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Столовая гимназии города Суворова. Домашняя кухня, свежие продукты и порции, которые дают силы на весь учебный день.
+              Столовая гимназии города Суворова. Кормим вкусно, честно и по-домашнему — чтобы на уроках думалось, а не урчало.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
