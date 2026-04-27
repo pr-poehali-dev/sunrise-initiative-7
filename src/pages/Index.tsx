@@ -1,3 +1,69 @@
+const weekMenu = [
+  {
+    day: "Понедельник",
+    breakfast: [
+      { name: "Каша овсяная с маслом", price: "35 ₽" },
+      { name: "Яйцо варёное", price: "15 ₽" },
+      { name: "Чай с сахаром", price: "10 ₽" },
+    ],
+    lunch: [
+      { name: "Борщ со сметаной", price: "65 ₽" },
+      { name: "Котлета + пюре картофельное", price: "95 ₽" },
+      { name: "Компот из сухофруктов", price: "20 ₽" },
+    ],
+  },
+  {
+    day: "Вторник",
+    breakfast: [
+      { name: "Блинчики со сгущёнкой", price: "50 ₽" },
+      { name: "Какао с молоком", price: "20 ₽" },
+    ],
+    lunch: [
+      { name: "Суп куриный с лапшой", price: "60 ₽" },
+      { name: "Гречка + гуляш", price: "90 ₽" },
+      { name: "Кисель", price: "15 ₽" },
+    ],
+  },
+  {
+    day: "Среда",
+    breakfast: [
+      { name: "Творожная запеканка со сметаной", price: "55 ₽" },
+      { name: "Чай с лимоном", price: "10 ₽" },
+    ],
+    lunch: [
+      { name: "Рассольник", price: "60 ₽" },
+      { name: "Рыба запечённая + рис", price: "100 ₽" },
+      { name: "Компот из яблок", price: "20 ₽" },
+    ],
+  },
+  {
+    day: "Четверг",
+    breakfast: [
+      { name: "Каша манная с вареньем", price: "35 ₽" },
+      { name: "Пирожок с капустой", price: "30 ₽" },
+      { name: "Чай", price: "10 ₽" },
+    ],
+    lunch: [
+      { name: "Щи из свежей капусты", price: "60 ₽" },
+      { name: "Тефтели + макароны", price: "90 ₽" },
+      { name: "Кисель", price: "15 ₽" },
+    ],
+  },
+  {
+    day: "Пятница",
+    breakfast: [
+      { name: "Омлет с сыром", price: "50 ₽" },
+      { name: "Хлеб с маслом", price: "10 ₽" },
+      { name: "Какао", price: "20 ₽" },
+    ],
+    lunch: [
+      { name: "Гороховый суп", price: "55 ₽" },
+      { name: "Котлета куриная + овощи тушёные", price: "95 ₽" },
+      { name: "Компот", price: "20 ₽" },
+    ],
+  },
+];
+
 export default function Index() {
   return (
     <>
@@ -145,6 +211,47 @@ export default function Index() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="section-padding" style={{ borderTop: "var(--border)" }}>
+          <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
+            МЕНЮ НА НЕДЕЛЮ
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+            {weekMenu.map((day) => (
+              <div key={day.day} style={{ border: "var(--border)", background: "white", boxShadow: "4px 4px 0 #1a1a1a" }}>
+                <div style={{ background: "var(--dark)", color: "white", padding: "14px 20px" }}>
+                  <span style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 800, fontSize: "16px", textTransform: "uppercase" }}>
+                    {day.day}
+                  </span>
+                </div>
+                <div style={{ padding: "20px" }}>
+                  <div style={{ marginBottom: "16px" }}>
+                    <div style={{ fontWeight: 800, fontSize: "12px", textTransform: "uppercase", letterSpacing: "2px", color: "var(--primary)", marginBottom: "10px" }}>
+                      Завтрак
+                    </div>
+                    {day.breakfast.map((item) => (
+                      <div key={item.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "6px", borderBottom: "1px dashed #ddd", paddingBottom: "6px" }}>
+                        <span style={{ fontSize: "14px", color: "#444" }}>{item.name}</span>
+                        <span style={{ fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap", marginLeft: "8px" }}>{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 800, fontSize: "12px", textTransform: "uppercase", letterSpacing: "2px", color: "var(--secondary)", marginBottom: "10px" }}>
+                      Обед
+                    </div>
+                    {day.lunch.map((item) => (
+                      <div key={item.name} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "6px", borderBottom: "1px dashed #ddd", paddingBottom: "6px" }}>
+                        <span style={{ fontSize: "14px", color: "#444" }}>{item.name}</span>
+                        <span style={{ fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap", marginLeft: "8px" }}>{item.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
